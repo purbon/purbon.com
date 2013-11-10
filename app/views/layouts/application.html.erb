@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PurbonCom</title>
+  <title>purbon.com</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="page">
+    <div id="header">
+      <div id="logo">
+        <h1>Pere Urbon-Bayes</h1>
+        <h4>@bacelona</h4>
+      </div>
+        <ul class="menu">
+          <li class="row">Writings</li>
+          <li class="row">Experiences</li>
+          <li class="row">Contact me</li>
+        </ul>
+    </div>
+    <div id="body">
+      <%= yield %>
+    </div>
+  </div>
 </body>
 </html>

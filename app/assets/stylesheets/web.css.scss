@@ -1,0 +1,51 @@
+// Place all the styles related to the web controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#header {
+  overflow: hidden;
+  #logo {
+    float: left;
+    margin: 0 0;
+    padding: 0 0;
+    width: 50%;
+    h1 {
+      margin: 0 0;
+      padding: 0 0;
+    }
+    h4 {
+     font-size: 10px;
+     margin: 0;
+     padding: 0;
+    }
+  }
+  ul.menu {
+    float: right;
+    width: 50%;
+    margin: 0 0;
+    padding: 1em 0 1em 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  ul.menu li {
+    display: inline;
+    margin-right: 1em;
+  }
+}
+
+#body {
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 56px;
+    margin-bottom: 1em;
+    line-height: 1.2em;
+    color: #151515;
+  }
+  section {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify;
+  }
+}
