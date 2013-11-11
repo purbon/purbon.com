@@ -18,22 +18,31 @@
      padding: 0;
     }
   }
-  ul.menu {
+  .options {
     float: right;
     margin: 0 1em 0 0;
-    padding: 1em 0 1em 0;
-    list-style: none;
-    overflow: hidden;
-  }
-  ul.menu li {
-    display: inline;
-    margin-right: 1em;
-  }
+    padding: 0 0 1em 0;
+    
+    ul.menu {
+      float: left;
+      list-style: none;
+      overflow: hidden;
+    }
+    ul.menu li {
+      display: inline;
+      margin-right: 1em;
+    }
 
-  ul.menu li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+    ul.menu li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .locale {
+      float: right;
+      margin-right: 1em;
+    }
   }
 }
 

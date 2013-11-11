@@ -21,7 +21,7 @@ body {
 #header {
   background-color: #fa0;
   position: fixed;
-  padding: 1em;
+  padding: 1em 1em 0 1em;
   left: 0;
   right: 0;
   top: 0;
