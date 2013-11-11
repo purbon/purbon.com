@@ -14,9 +14,15 @@
         <h4>@Barcelona</h4>
       </div>
         <ul class="menu">
-          <li class="row">Writings</li>
-          <li class="row">Experiences</li>
-          <li class="row"><a href="#contactme">Contact me</a></li>
+          <li class="row"><a href="#"><%= t('writings') %></a></li>
+          <li class="row"><a href="#"><%= t('experiences') %></a></li>
+          <li class="row"><a href="#contactme"><%= t('contactme') %></a></li>
+        </ul>
+        <ul class="menu locale">
+          <li class="row"><a href="#"><%= image_tag('England.png') %></a></li>
+          <li class="row"><a href="#"><%= image_tag('Germany.png') %></a></li>
+          <li class="row"><a href="#"><%= image_tag('Catalan.png') %></a></li>
+          <li class="row"><a href="#"><%= image_tag('Spain.png') %></a></li>
         </ul>
     </div>
     <div id="body">
