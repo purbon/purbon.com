@@ -33,7 +33,7 @@
 }
 
 #body {
-  overflow: show;
+  overflow: visible;
   h1 {
     text-align: center;
     font-weight: bold;
@@ -47,5 +47,8 @@
     margin-left: auto;
     margin-right: auto;
     text-align:justify;
+  }
+  section.first {
+     margin-top: 10%;
   }
 }
