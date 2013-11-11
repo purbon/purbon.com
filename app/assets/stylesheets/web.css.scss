@@ -93,8 +93,9 @@
   }
 
   section.blue {
-    background: rgb(88, 115, 130) url(/images/wave-white.png) top left repeat-x;
+    background: url(/images/wave-white.png) top left repeat-x;
     background-size: 7px 2px;
+    background-color: rgb(88,115,130);
    }
 
   section#profile {
@@ -129,7 +130,7 @@
   }
 
   .credits {
-    background: url('wave-blue.png') top left repeat-x !Important;
+    background: url('wave-blue.png') top left repeat-x;
     background-size: 8px 2px !Important;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -147,6 +148,18 @@
       display: inline-block;
       width: 32px;
       height: 32px;
+    }
+  }
+
+  section#experiences {
+      .experience {
+        display: inline-block;
+        img {
+          display: inline-block;
+          width: auto;
+          height: 100px;
+        }
+        margin: 0 5px 0 0;
     }
   }
 }
