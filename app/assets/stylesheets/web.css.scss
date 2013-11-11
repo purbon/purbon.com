@@ -131,4 +131,17 @@
     text-align: center;
     font-size: 10px;
   }
+
+  ul.social {
+    float: left;
+    list-style: none;
+    li {
+      display: inline;
+    }
+    .img_wrapper {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+    }
+  }
 }
