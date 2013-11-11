@@ -98,6 +98,11 @@
    }
 
   section#profile {
+    .content {
+      h1 {
+        clear: left;
+      }
+    }
     .column {
       display: inline-block;
       img {
@@ -108,7 +113,8 @@
       h3 {
         text-align: center;
       }
-      width: 33%;
+      width: 30%;
+      margin-right: 2%;
     }
   }
 
