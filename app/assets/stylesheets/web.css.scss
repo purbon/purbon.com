@@ -21,8 +21,7 @@
   }
   ul.menu {
     float: right;
-    width: 50%;
-    margin: 0 0;
+    margin: 0 1em 0 0;
     padding: 1em 0 1em 0;
     list-style: none;
     overflow: hidden;
@@ -34,6 +33,7 @@
 }
 
 #body {
+  overflow: show;
   h1 {
     text-align: center;
     font-weight: bold;

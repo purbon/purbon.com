@@ -20,6 +20,13 @@ body {
 
 #header {
   background-color: #8bb;
+  position: fixed;
   padding: 1em;
+  left: 0;
+  right: 0;
+  top: 0;
   color: white;
+  width: 100%;
+  opacity: .9;
+  z-index: 1030;
 }
