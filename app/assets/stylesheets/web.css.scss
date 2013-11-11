@@ -78,4 +78,19 @@
        margin-right: auto;
      }
   }
+
+  section#profile {
+    .column {
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h3 {
+        text-align: center;
+      }
+      width: 33%;
+      float: left;
+    }
+  }
 }
