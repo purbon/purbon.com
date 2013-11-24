@@ -1,0 +1,37 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+de:
+  writings: "Worten"
+  experiences: "Praxis"
+  contactme: "Kontaktieren!"
+  whoim: "Ich bin"
+  whoim_text: "<p>Mein name ist Pere Urbón, ein Software Craftman aus Barcelona aber jetzt ich bleibe in Berlin, Germany. Mit über 10 Jahren Erfahrung aus Software in verschiedenen Umgebungen. Mit Ruby, Java, Javascript, NoSQL-Datenbanken (GraphDB ist) und viele andere Technologien, Ich kann Ihre Organisation zu helfen.</p>
+<p>Ich mag meetups, konference und  bedingen als Lautsprecher.</p>"
+  profile: "Profil"
+  profile_text: "<p>Mein Hobby ist meine Arbeit, und meine Arbeit ist mein Hobby, was könnte ich bitten?. Ich mag Software entwicklung, wenn die Leuten hilfen könnten, seine Probleme zu lösen, mit geeignete Werkzeuge und Praktiken.</p>"
+  software_carpitenry: "<h3>Software Carpentry</h3>"
+  nosql_engineering: "<h3>NoSQL Ingenieur</h3>"
+  consulting: "<h3>Beratung</h3>"
+  experiences_text: "<p>Mit Erfahrung mit Java/Ruby/JavaScript/C, und mit NoSQL (DEX/Neo4j/Redis/MongoDB), Relational (MySQL, Postgree) und BigData (Hadoop). Ich mag um auf dem neuesten Stand sein, so die problemen besser Ich kann fix.</p>"
+  links: "Links"
+  code: "Code"
+  social: "Sozial"
