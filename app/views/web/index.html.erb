@@ -1,8 +1,7 @@
 <section class="first blue" >
-<div class="content">
-  <h1><%= t('whoim') %></h1>
-  <%= t('whoim_text').html_safe  %>
-  <ul class="social">
+  <div class="photo">
+    <%= image_tag('purbon.jpg') %>
+    <ul class="social">
     <li class="github">
     <a href="https://github.com/purbon" original-title="GitHub">
       <div class="img_wrapper">
@@ -32,6 +31,10 @@
     </a>
     </li>
   </ul>
+  </div>
+<div class="content">
+  <h1><%= t('whoim') %></h1>
+  <%= t('whoim_text').html_safe  %>
 </div>
 </section>
 
