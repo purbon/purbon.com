@@ -1,5 +1,5 @@
 set :stage, :production
-server "80.148.29.35", :app, :web, :db, :primary => true
+server "54.194.92.159", user: 'purboncom', roles: %w{:app, :web, :db}, :primary => true
 set :deploy_to, "~/production/purboncom"
 
 # Simple Role Syntax

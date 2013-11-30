@@ -5,7 +5,6 @@ set :repo_url, 'git@github.com:purbon/purbon.com.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
-set :deploy_to, '/home/purboncom/'
 set :scm, :git
 set :branch, :master
 
