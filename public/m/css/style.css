@@ -1,0 +1,28 @@
+.photo {
+  display: table;
+  margin-left: auto;
+margin-right: auto;
+}
+
+.photo img {
+  display: table-row;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  width: 167px;
+  height: 221px;
+  z-index: 10;
+margin-bottom: 10px; }
+.photo ul.social {
+  display: table-row;
+list-style: none; }
+.photo ul.social img {
+  width: 25px;
+height: 25px; }
+.photo ul.social li {
+  float: left;
+margin-left: 10px; }
+.photo ul.social .img_wrapper {
+  display: inline;
+  width: 32px;
+height: 32px; }
