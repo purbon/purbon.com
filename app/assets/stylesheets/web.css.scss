@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #header {
+  height: 65px;
   overflow: hidden;
   #logo {
     float: left;
@@ -98,41 +99,50 @@
     }
   }
   section.first {
-     background: url('datacenter.jpg') no-repeat fixed center top;
-     max-width: 100%;
-     color: white;
-     margin-top: 0;
-     height: 350px;
-     h1 {
-       margin-top: 0;
-       padding-top: 100px;
-       color: white;
-     }
-     p {
-       margin: 1px auto;
-     }
+    color: white;
+    margin-top:65px;
+    h1 {
+      margin-top: 0;
+      color: white;
+    }
+    p {
+    }
+
+    .text {
+    }
+
+    .content {
+      padding: 1em;
+    }
+
      .photo {
-       padding: 1em;
-       padding-left: 0.5em;
-       padding-top: 90px;
-       float: left;
+       display: table;
+       margin-left: auto;
+       margin-right: auto;
        img {
-         width: 230px;
-         height: 230px;
+         display: table-row;
+         -moz-border-radius: 150px;
+         -webkit-border-radius: 150px;
+         border-radius: 150px;
+         width: 167px;
+         height: 221px;
          z-index: 10;
+         margin-bottom: 10px;
        }
        ul.social {
+         display: table-row;
          list-style: none;
-         margin: 0;
          img {
           width: 25px;
           height: 25px;
          }
          li {
-           display: inline;
+          float: left;
+          margin-left: 10px;
          }
+         
          .img_wrapper {
-           display: inline-block;
+           display: inline;
            width: 32px;
            height: 32px;
          }
