@@ -9,18 +9,19 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require foundation_and_overrides
+
  *= require_tree .
  */
 
 body {
   background: #fafafa;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
   margin: 0 0;
 }
 
 #header {
   background-color: #fff;
-  position: fixed;
   padding: 0 1em 0 1em;
   left: 0;
   right: 0;

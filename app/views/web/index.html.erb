@@ -1,93 +1,60 @@
-<section class="first blue" >
-<div class="content">
-  <div class="text">
-    <h1><%= t('whoim') %></h1>
-    <div class="photo">
-      <%= image_tag('purbon.jpg') %>
-      <ul class="social">
-        <li class="github">
-        <a href="https://github.com/purbon" original-title="GitHub">
-          <div class="img_wrapper">
-            <%= image_tag('github.png') %>
-          </div>
-        </a>
-        </li>
-        <li class="twitter">
-        <a href="https://twitter.com/purbon" original-title="Twitter">
-          <div class="img_wrapper">
-            <%= image_tag('twitter.png') %>
-          </div>
-        </a>
-        </li>
-        <li class="linkedin">
-        <a href="http://www.linkedin.com/in/purbon" original-title="Linkedin">
-          <div class="img_wrapper">
-            <%= image_tag('linkedin.png') %>
-          </div>
-        </a>
-        </li>
-        <li class="xing">
-        <a href="http://www.xing.com/profile/Pere_UrbonBayes2" original-title="Xing">
-          <div class="img_wrapper">
-            <%= image_tag('xing.jpg') %>
-          </div>
-        </a>
-        </li>
-      </ul>
-    </div>
-    <%= t('whoim_text').html_safe  %>
+<section class="first blue content" >
+<div class="row">
+  <div class="small-12 small-centered columns"><h1>pere urbon-bayes</h1></div>
+</div>
+<div class="row">
+  <div class="small-6 columns">
+    <div class="photo"><%= image_tag('purbon.jpg') %>
+    <ul class="social small-block-grid-4">
+      <li>
+      <a href="https://github.com/purbon" original-title="GitHub">
+        <div class="img_wrapper">
+          <%= image_tag('github.png') %>
+        </div>
+      </a>
+      </li>
+      <li>
+      <a href="https://twitter.com/purbon" original-title="Twitter">
+        <div class="img_wrapper">
+          <%= image_tag('twitter.png') %>
+        </div>
+      </a>
+      </li>
+      <li>
+      <a href="http://www.linkedin.com/in/purbon" original-title="Linkedin">
+        <div class="img_wrapper">
+          <%= image_tag('linkedin.png') %>
+        </div>
+      </a>
+      </li>
+      <li>
+      <a href="http://www.xing.com/profile/Pere_UrbonBayes2" original-title="Xing">
+        <div class="img_wrapper">
+          <%= image_tag('xing.jpg') %>
+        </div>
+      </a>
+      </li>
+    </ul>
   </div>
 </div>
+<div class="small-6 columns">  
+  <%= t('whoim_text').html_safe  %>
+  <a href="mailto:pere.urbon at gmail dot com" class="button" ><%= t('contactme') %></a>
+</div>
+</div>
 </section>
-
 <section id="profile" class="white">
-<div class="content">
-<h1><%= t('profile') %></h1>
-<%= t('profile_text').html_safe  %>
-<div class="column">
-  <%= image_tag('carpintery.png') %>
-  <%= t('software_carpitenry').html_safe %>
+<div class="row">
+  <div class="small-12 small-centered columns"><h1><%= t('whoim') %></h1></div>
 </div>
-<div class="column">
-  <%= image_tag('databases.png') %>
-  <%= t('nosql_engineering').html_safe %>
+<div class="row">
+  <div class="small-4 columns column"><ul class="no-bullet"><li><%= image_tag('carpintery.png') %></li><li><h3><%= t('software_carpitenry').html_safe %></h3></li></ul></div>
+  <div class="small-4 columns column"><ul class="no-bullet"><li><%= image_tag('databases.png') %></li><li><h3><%= t('nosql_engineering').html_safe %></h3></li></ul></div>
+  <div class="small-4 columns column"><ul class="no-bullet"><li><%= image_tag('consulting.png') %></li><li><h3><%= t('consulting').html_safe %></h3></li></ul></div>
 </div>
-<div class="column">
-  <%= image_tag('consulting.png') %>
-  <%= t('consulting').html_safe %>
-</div>
-</div>
-</section>
-<section id="experiences" class="blue">
-<div class="content">
-  <h1><%= t('experiences') %></h1>
-  <%= t('experiences_text').html_safe  %>
-  <h2><%= t('links') %></h2>
-  <ul>
-    <li><%= t('writings') %>
-    <ul>
-      <li><a href="http://words.purbon.com">Words</a></li>
-    </ul>
-    </li>
-    <li><%= t('code') %>
-    <ul>
-      <li><a href="https://github.com/andreasronge/neo4j">Neo4jrb</a></li>
-      <li><a href="http://fosdem.purbon.com/">GraphDevRoom</a></li>
-    </ul>
-    </li>
-    <li><%= t('social') %>
-    <ul>
-      <li><a href="http://about.me/purbon">About.me</a></li>
-      <li><a href="https://www.facebook.com/pere.urbon">Facebook</a></li>
-      <li><a href="http://runkeeper.com/user/purbon">Runkeeper</a></li>
-    </ul>
-    </li>
-  </ul>
-</div>
-</section>
-<section id="contactme" class="white">
-<div class="content">
-  <h1><%= t('contactme') %></h1>
-  <p class="contact"> <a href="mailto:pere.urbon at gmail dot com">pere.urbon at gmail dot com</a>
+<div class="row">
+  <div class="small-12 small-centered columns">
+    <%= t('experiences_text').html_safe  %>
+  </div>
 </div>
 </section>

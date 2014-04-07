@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Pere Urbon-Bayes - purbon.com</title>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div id="page">
-    <div id="header" class="no-select-text">
-      <div id="logo">
-        <h1>Pere Urbon-Bayes</h1>
-        <h4>@Barcelona</h4>
-        <ul class="menu locale">
-          <li class="row"><a href="?locale=en#"><%= image_tag('England.png') %></a></li>
-          <li class="row"><a href="?locale=de#"><%= image_tag('Germany.png') %></a></li>
-          <li class="row"><a href="?locale=ca#"><%= image_tag('Catalan.png') %></a></li>
-        </ul>
-      </div>
-      <span class="options">
-        <ul class="menu">
-          <li class="row"><a href="http://words.purbon.com"><%= t('writings') %></a></li>
-          <li class="row"><a href="#experiences"><%= t('experiences') %></a></li>
-          <li class="row"><a href="#contactme"><%= t('contactme') %></a></li>
-        </ul>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      </span>
+    <title><%= content_for?(:title) ? yield(:title) : "Pere Urbon-Bayes" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="fixed">
+      <nav class="top-bar" data-topbar data-options="">
+      <dl class="title-area">
+        <dt class="name"><h1><a href="#">Pere Urbon-Bayes</a></h1></dt>
+      </dl>
+      <section class="top-bar-section">
+      <ul class="left">
+          <li class=""><a href="?locale=en#"><img alt="England" src="/assets/England-613565e438bdc6f8f8bd79b8786220cf.png" /></a></li>
+          <li class=""><a href="?locale=de#"><img alt="Germany" src="/assets/Germany-0bfeece11c5d18ac24ea8c7a4c1a8c5e.png" /></a></li>
+          <li class=""><a href="?locale=ca#"><img alt="Catalan" src="/assets/Catalan-4f763886c605684d79440be0c3974f27.png" /></a></li>
+      </ul>
+      <ul class="right">
+         <li class="active"><a href="http://words.purbon.com">Writings</a></li>
+         <li class=""><a href="#profile"><%= t('profile') %></a></li>
+         <li class=""><a href="#contactme">Contact me!</a></li>
+      </ul>
+      </section>
+      </nav>
     </div>
     <div id="body">
       <%= yield %>
+      <%= javascript_include_tag "application" %>
       <section class="credits blue">
       © 2013 purbon.com
       </section>
     </div>
-  </div>
-</body>
-<script type="text/javascript">
+  </body>
+  <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-46127585-2']);
@@ -47,6 +49,5 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 </html>
