@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "foundation_and_overrides";
+
 #header {
   height: 65px;
   h4 {
@@ -117,7 +119,7 @@
   section.blue {
     background: url(/images/wave-white.png) top left repeat-x;
     background-size: 7px 2px;
-    background-color: rgb(88,115,130);
+    background-color: $secondary-color;
    }
 
   section#profile {
@@ -158,6 +160,7 @@
     padding-bottom: 10px;
     text-align: center;
     font-size: 10px;
+    color: #fff;
   }
 
   section#experiences {
@@ -172,4 +175,3 @@
     }
   }
 }
-

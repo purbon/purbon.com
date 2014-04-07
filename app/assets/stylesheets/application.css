@@ -10,13 +10,11 @@
  *
  *= require_self
  *= require foundation_and_overrides
-
  *= require_tree .
  */
 
 body {
   background: #fafafa;
-  /*font-family: 'Open Sans', sans-serif;*/
   margin: 0 0;
 }
 
