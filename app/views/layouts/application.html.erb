@@ -13,6 +13,7 @@
   </head>
   <body>
     <div>
+      <div class="fixed">
       <nav class="top-bar" data-topbar data-options="">
       <ul class="title-area">
         <li class="name"><h1><%= link_to 'Pere Urbon-Bayes', root_path %></h1></li>
@@ -24,18 +25,14 @@
           <li class=""><a href="?locale=ca#"><img alt="Catalan" src="/assets/Catalan-4f763886c605684d79440be0c3974f27.png" /></a></li>
       </ul>
       <ul class="right">
-         <li class=""><a href="http://words.purbon.com">Writings</a></li>
-         <li class="has-dropdown">
-         <a href="#"><%= t('me') %></a>
-         <ul class="dropdown">
-           <li class=""><%= link_to t('profile'), root_path(anchor: 'profile') %></li>
-           <li class=""><%= link_to t('cv'), cv_path %></li>
-           <li class=""><%= link_to t('contactme'), contactme_path %></li>
-         </ul>
-         </li>
+        <li class=""><a href="http://words.purbon.com">Writings</a></li>
+        <li class=""><%= link_to t('profile'), root_path(anchor: 'profile') %></li>
+        <li class=""><%= link_to t('cv'), cv_path %></li>
+        <li class=""><%= link_to t('contactme'), contactme_path %></li>
       </ul>
       </section>
       </nav>
+    </div>
     </div>
     <div id="body">
       <%= yield %>
