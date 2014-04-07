@@ -1,55 +1,54 @@
 <h1><%= t('contactme') %></h1>
 
-<form data-abide>
-  <div class="row">
-    <div class="small-12">
-      <div class="row">
-        <div class="small-2 columns">
-          <label for="right-label" class="right inline">Name</label>
-        </div>
-        <div class="small-5 columns left">
-          <input type="text" id="right-label" placeholder="Your name" required pattern="[a-zA-Z]+">
-          <small class="error">Your name is required.</small>
-        </div>
+<%= form_tag('/contactme', 'data-abide' => '') do %>
+<div class="row">
+  <div class="small-12">
+    <div class="row">
+      <div class="small-2 columns">
+        <label for="right-label" class="right inline">Name</label>
+      </div>
+      <div class="small-5 columns left">
+        <%= text_field_tag 'name', '', { :placeholder => 'Your name', :pattern => '[a-zA-Z\s]+', :required => ''  } %>
+        <small class="error">Your name is required.</small>
       </div>
     </div>
   </div>
-   <div class="row">
-    <div class="small-12">
-      <div class="row">
-        <div class="small-2 columns">
-          <label for="right-label" class="right inline">Email</label>
-        </div>
-        <div class="small-5 columns left">
-          <input type="email" id="right-label" placeholder="Your email" required>
-          <small class="error">An email address is required.</small>
-        </div>
+</div>
+<div class="row">
+  <div class="small-12">
+    <div class="row">
+      <div class="small-2 columns">
+        <label for="right-label" class="right inline">Email</label>
+      </div>
+      <div class="small-5 columns left">
+        <%= email_field_tag 'email', '', {:placeholder => 'Your email', :required => '' } %>
+        <small class="error">An email address is required.</small>
       </div>
     </div>
   </div>
-   <div class="row">
-    <div class="small-12">
-      <div class="row">
-        <div class="small-2 columns">
-          <label for="right-label" class="right inline"></label>
-        </div>
-        <div class="small-7 columns left">
-          <textarea placeholder="Your message"></textarea>
-        </div>
+</div>
+<div class="row">
+  <div class="small-12">
+    <div class="row">
+      <div class="small-2 columns">
+        <label for="right-label" class="right inline"></label>
+      </div>
+      <div class="small-7 columns left">
+        <%= text_area_tag 'message', '', { :placeholder => 'Your message' } %>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="small-12">
-      <div class="row">
-         <div class="small-2 columns">
-          <label for="right-label" class="right inline"></label>
-        </div>
-        <div class="small-3 columns left">
-            <button type="submit">Send</button>
-        </div>
+</div>
+<div class="row">
+  <div class="small-12">
+    <div class="row">
+      <div class="small-2 columns">
+        <label for="right-label" class="right inline"></label>
+      </div>
+      <div class="small-3 columns left">
+        <button type="submit">Send</button>
       </div>
     </div>
   </div>
-
-</form>
+</div>
+<% end %>

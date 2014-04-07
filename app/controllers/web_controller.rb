@@ -9,4 +9,16 @@ class WebController < ApplicationController
   def contactme
   end
 
+  def send_contact
+    from = params[:name] || 'Default'
+    email = params[:email]
+    message = params[:message] || ''
+    ContactMailer.contact_email(from, email, message).deliver
+    fields = { :name => from, :from => email, :message => message }
+    Contact.create(fields)
+    respond_to do |format|
+      format.html { redirect_to :contactme, :alert => 'send' }
+    end
+  end
+
 end

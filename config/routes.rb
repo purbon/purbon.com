@@ -4,7 +4,8 @@ PurbonCom::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   get 'cv' => 'web#cv'
-  get 'contactme' => 'web#contactme'
+  get  'contactme' => 'web#contactme'
+  post 'contactme' => 'web#send_contact'
   root 'web#index'
 
   # Example of regular route:
