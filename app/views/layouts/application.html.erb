@@ -12,11 +12,11 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div class="fixed">
+    <div>
       <nav class="top-bar" data-topbar data-options="">
-      <dl class="title-area">
-        <dt class="name"><h1><a href="#">Pere Urbon-Bayes</a></h1></dt>
-      </dl>
+      <ul class="title-area">
+        <li class="name"><h1><%= link_to 'Pere Urbon-Bayes', root_path %></h1></li>
+      </ul>
       <section class="top-bar-section">
       <ul class="left">
           <li class=""><a href="?locale=en#"><img alt="England" src="/assets/England-613565e438bdc6f8f8bd79b8786220cf.png" /></a></li>
@@ -25,8 +25,14 @@
       </ul>
       <ul class="right">
          <li class=""><a href="http://words.purbon.com">Writings</a></li>
-         <li class=""><a href="#profile"><%= t('profile') %></a></li>
-         <li class=""><a href="#contactme">Contact me!</a></li>
+         <li class="has-dropdown">
+         <a href="#"><%= t('me') %></a>
+         <ul class="dropdown">
+           <li class=""><%= link_to t('profile'), root_path(anchor: 'profile') %></li>
+           <li class=""><%= link_to t('cv'), cv_path %></li>
+           <li class=""><%= link_to t('contactme'), contactme_path %></li>
+         </ul>
+         </li>
       </ul>
       </section>
       </nav>
