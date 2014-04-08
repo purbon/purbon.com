@@ -18,7 +18,8 @@ module PurbonCom
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    APP_CONFIG = YAML.load_file("#{Rails.root}/config/env.yml")[Rails.env]
+    env = Rails.env || :development
+    APP_CONFIG = YAML.load_file("#{Rails.root}/config/env.yml")[env]
 
     config.i18n.default_locale = :en
     config.action_mailer.default_url_options = { :host => 'localhost:3000' }
