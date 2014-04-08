@@ -12,17 +12,16 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div>
-      <div class="fixed">
+    <div class="sticky">
       <nav class="top-bar" data-topbar data-options="">
       <ul class="title-area">
         <li class="name"><h1><%= link_to 'Pere Urbon-Bayes', root_path %></h1></li>
       </ul>
       <section class="top-bar-section">
       <ul class="left">
-          <li class=""><a href="?locale=en#"><img alt="England" src="/assets/England-613565e438bdc6f8f8bd79b8786220cf.png" /></a></li>
-          <li class=""><a href="?locale=de#"><img alt="Germany" src="/assets/Germany-0bfeece11c5d18ac24ea8c7a4c1a8c5e.png" /></a></li>
-          <li class=""><a href="?locale=ca#"><img alt="Catalan" src="/assets/Catalan-4f763886c605684d79440be0c3974f27.png" /></a></li>
+        <li class=""><a href="?locale=en#"><img alt="England" src="/assets/England-613565e438bdc6f8f8bd79b8786220cf.png" /></a></li>
+        <li class=""><a href="?locale=de#"><img alt="Germany" src="/assets/Germany-0bfeece11c5d18ac24ea8c7a4c1a8c5e.png" /></a></li>
+        <li class=""><a href="?locale=ca#"><img alt="Catalan" src="/assets/Catalan-4f763886c605684d79440be0c3974f27.png" /></a></li>
       </ul>
       <ul class="right">
         <li class=""><a href="http://words.purbon.com">Writings</a></li>
@@ -32,7 +31,6 @@
       </ul>
       </section>
       </nav>
-    </div>
     </div>
     <div id="body">
       <%= yield %>

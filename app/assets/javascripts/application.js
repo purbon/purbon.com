@@ -17,3 +17,12 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+var ready = function() {
+  setTimeout(function(){
+    $('#flash').fadeOut();
+  },2000);
+  
+}
+$(document).ready(ready);
+$(document).on('page:load', ready);

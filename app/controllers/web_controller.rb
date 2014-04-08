@@ -17,6 +17,7 @@ class WebController < ApplicationController
     fields = { :name => from, :from => email, :message => message }
     Contact.create(fields)
     respond_to do |format|
+      flash[:notice] = "Message delivered"
       format.html { redirect_to :contactme, :alert => 'send' }
     end
   end
