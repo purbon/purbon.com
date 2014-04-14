@@ -13,7 +13,7 @@ class WebController < ApplicationController
     from = params[:name] || 'Default'
     email = params[:email]
     message = params[:message] || ''
-    ContactMailer.contact_email(from, email, message).deliver
+    ContactMailer.contact_email(from, email, message).deliver rescue ""
     fields = { :name => from, :from => email, :message => message }
     Contact.create(fields)
     respond_to do |format|
