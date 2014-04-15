@@ -1,46 +1,23 @@
-<section class="first blue content" >
+<section class="first blue" >
 <div class="row">
-  <div class="small-12 small-centered columns"><h1>pere urbon-bayes</h1></div>
-</div>
-<div class="row">
-  <div class="small-6 columns">
-    <div class="photo"><%= image_tag('purbon.jpg') %>
-    <ul class="social small-block-grid-4">
-      <li>
-      <a href="https://github.com/purbon" original-title="GitHub">
-        <div class="img_wrapper">
-          <%= image_tag('github.png') %>
-        </div>
-      </a>
-      </li>
-      <li>
-      <a href="https://twitter.com/purbon" original-title="Twitter">
-        <div class="img_wrapper">
-          <%= image_tag('twitter.png') %>
-        </div>
-      </a>
-      </li>
-      <li>
-      <a href="http://www.linkedin.com/in/purbon" original-title="Linkedin">
-        <div class="img_wrapper">
-          <%= image_tag('linkedin.png') %>
-        </div>
-      </a>
-      </li>
-      <li>
-      <a href="http://www.xing.com/profile/Pere_UrbonBayes2" original-title="Xing">
-        <div class="img_wrapper">
-          <%= image_tag('xing.jpg') %>
-        </div>
-      </a>
-      </li>
-    </ul>
+  <div class="small-12 centered columns">
+    <div class="left content">
+      <div class="photo"><%= image_tag('purbon.jpg', size: "167x221") %></div>
+    </div>
+    <div class="clearfix">  
+      <p><%= t('whoim_text').html_safe  %></p>
+      <ul class="right inline-list social">
+        <% @total.times do |id| %>
+          <li>
+          <a href="<%= @links[id] %>" original-title="<%= @titles[id] %>">
+            <%= image_tag(@imgs[id], size: "42x42") %>
+          </a>
+          </li>
+        <% end %>
+      </ul>
+      <%= link_to t('contactme'), contactme_path, :class => "left button [secondary alert success]" %>
+    </div>
   </div>
-</div>
-<div class="small-6 columns">  
-  <%= t('whoim_text').html_safe  %>
-  <%= link_to t('contactme'), contactme_path, :class => "button [secondary alert success]" %>
-</div>
 </div>
 </section>
 <section id="profile" class="white">

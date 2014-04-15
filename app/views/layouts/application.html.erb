@@ -7,31 +7,37 @@
 
     <title><%= content_for?(:title) ? yield(:title) : "Pere Urbon-Bayes" %></title>
 
+  <body>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
-    <div class="sticky">
-      <nav class="top-bar" data-topbar data-options="">
-      <ul class="title-area">
-        <li class="name"><h1><%= link_to 'Pere Urbon-Bayes', root_path %></h1></li>
-      </ul>
-      <section class="top-bar-section">
-      <ul class="left">
+  <div id="header">
+    <div class="row">
+      <div class="small-12 small-centered columns">
+        <h1><%= link_to 'PERE URBON-BAYES', root_path %></h1>        
+      </div>
+    </div>
+  </div>
+  <div class="contain-to-grid">
+    <nav class="top-bar" data-topbar data-options="">
+    <section class="top-bar-section">
+      <ul class="left show-for-medium-up">
         <li class=""><a href="?locale=en#"><%= image_tag 'England.png'%></a></li>
         <li class=""><a href="?locale=de#"><%= image_tag 'Germany.png'%></a></li>
         <li class=""><a href="?locale=ca#"><%= image_tag 'Catalan.png'%></a></li>
+        <li class="divider"></li>
       </ul>
-      <ul class="right">
+      <ul class="left">
         <li class=""><a href="http://words.purbon.com">Writings</a></li>
         <li class=""><%= link_to t('profile'), root_path(anchor: 'profile') %></li>
         <li class=""><%= link_to t('cv'), cv_path %></li>
         <li class=""><%= link_to t('contactme'), contactme_path %></li>
       </ul>
-      </section>
-      </nav>
-    </div>
+    </section>
+    </nav>
+  </div>
+</div>
     <div id="body">
       <%= yield %>
       <%= javascript_include_tag "application" %>

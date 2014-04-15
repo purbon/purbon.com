@@ -1,6 +1,11 @@
 class WebController < ApplicationController
   
   def index
+    @titles = ["Github", "Twitter", "Linkedin", "Xing"]
+    @links  = ["https://github.com/purbon", "https://twitter.com/purbon", "http://www.linkedin.com/in/purbon",
+               "http://www.xing.com/profile/Pere_UrbonBayes2"]
+    @imgs   = ["github.png", "twitter.png", "linkedin.png", "xing.jpg"]
+    @total  = 4
   end
 
   def cv
