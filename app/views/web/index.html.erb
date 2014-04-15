@@ -4,9 +4,9 @@
     <div class="left content">
       <div class="photo"><%= image_tag('purbon.jpg', size: "167x221") %></div>
     </div>
-    <div class="clearfix">  
+    <div class="text">  
       <p><%= t('whoim_text').html_safe  %></p>
-      <ul class="right inline-list social">
+          <ul class="inline-list social">
         <% @total.times do |id| %>
           <li>
           <a href="<%= @links[id] %>" original-title="<%= @titles[id] %>">
@@ -15,7 +15,9 @@
           </li>
         <% end %>
       </ul>
-      <%= link_to t('contactme'), contactme_path, :class => "left button [secondary alert success]" %>
+      <br/>
+      <%= link_to t('contactme'), contactme_path, :class => "button [secondary alert success]" %>
+      
     </div>
   </div>
 </div>
