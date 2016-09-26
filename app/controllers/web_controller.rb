@@ -9,6 +9,9 @@ class WebController < ApplicationController
   def contactme
   end
 
+  def slides
+  end
+
   def send_contact
     from = params[:name] || 'Default'
     email = params[:email]
