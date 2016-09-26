@@ -2,10 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "foundation_and_overrides";
-
 #header {
-  background-color: $secondary-color;
   h1 {
     text-transform: uppercase;
     text-align: center;
@@ -14,7 +11,37 @@
     a {
       color: white;
     }
+    margin: 0.1em;
   }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-right: 3em;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    //background-color: #111111;
+  }
+
+}
+
+ul.no-bullet {
+  list-style-type: none;
 }
 
 #body {
@@ -27,6 +54,12 @@
     line-height: 1.2em;
     color: #151515;
   }
+
+  .right-bar {
+    border-right: thick solid #000;
+    padding-right: 1em;
+  }
+
   section {
     height: 100%;
     .content {
@@ -76,7 +109,7 @@
   section.blue {
     background: url(/images/wave-white.png) top left repeat-x;
     background-size: 7px 2px;
-    background-color: $secondary-color;
+    background-color: red;
    }
 
   section#profile {

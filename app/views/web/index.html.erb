@@ -1,39 +1,11 @@
-<section class="first blue" >
-<div class="row">
-  <div class="small-12 centered columns">
-    <div class="left content">
-      <div class="photo"><%= image_tag('purbon.jpg', size: "167x221") %></div>
-    </div>
-    <div class="text">  
-      <p><%= t('whoim_text').html_safe  %></p>
-          <ul class="inline-list social">
-        <% @total.times do |id| %>
-          <li>
-          <a href="<%= @links[id] %>" original-title="<%= @titles[id] %>">
-            <%= image_tag(@imgs[id], size: "42x42") %>
-          </a>
-          </li>
-        <% end %>
-      </ul>
-      <br/>
-      <%= link_to t('contactme'), contactme_path, :class => "button [secondary alert success]" %>
-      
-    </div>
-  </div>
-</div>
-</section>
-<section id="profile" class="white">
-<div class="row">
-  <div class="small-12 small-centered columns"><h1><%= t('whoim') %></h1></div>
-</div>
-<div class="row">
-  <div class="small-4 columns column"><ul class="no-bullet"><li><%= image_tag('carpintery.png') %></li><li><h3><%= t('software_carpitenry').html_safe %></h3></li></ul></div>
-  <div class="small-4 columns column"><ul class="no-bullet"><li><%= image_tag('databases.png') %></li><li><h3><%= t('nosql_engineering').html_safe %></h3></li></ul></div>
-  <div class="small-4 columns column"><ul class="no-bullet"><li><%= image_tag('consulting.png') %></li><li><h3><%= t('consulting').html_safe %></h3></li></ul></div>
-</div>
-<div class="row">
-  <div class="small-12 small-centered columns">
-    <%= t('experiences_text').html_safe  %>
-  </div>
-</div>
-</section>
+<table style="width:100%; border:0">
+  <tr>
+    <td><%= image_tag('carpintery.png') %><h3><%= t('software_carpitenry').html_safe %></h3></td>
+    <td><%= image_tag('databases.png') %><h3><%= t('data_engineering').html_safe %></h3></td>
+    <td><%= image_tag('consulting.png') %><h3><%= t('consulting').html_safe %></h3></td>
+  </tr>
+</table>
+
+
+<%= t('experiences_text').html_safe  %>
+
