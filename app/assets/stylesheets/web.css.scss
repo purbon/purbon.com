@@ -9,7 +9,7 @@
     font-weight: bold;
     font-size: 56px;
     a {
-      color: white;
+      color: #000;
     }
     margin: 0.1em;
   }
@@ -58,79 +58,6 @@ ul.no-bullet {
   .right-bar {
     border-right: thick solid #000;
     padding-right: 1em;
-  }
-
-  section {
-    height: 100%;
-    .content {
-      margin-left: auto;
-      margin-right: auto;
-      text-align:justify;
-      h1 {
-        margin-top: 0px;
-        margin-bottom: 5px;
-      }
-    }
-  }
-  section.first {
-    padding-top: 5px;
-    color: white;
-    h1 {
-      margin-top: 0;
-      color: white;
-    }
-    p {
-    }
-
-    .text {
-    }
-
-    .content {
-      padding: 1em;
-    }
-
-    .photo img {
-      display: block;
-      margin: 0 auto;
-    }
-    .social {
-      padding-top: 5px;
-      margin: 0 auto;
-    }
-
-  }
-
-
-  section.white {
-    background: url('wave-blue.png') top left repeat-x,  url('wave-blue-bottom.png') bottom left repeat-x;
-    background-size: 8px 2px;
-  }
-
-  section.blue {
-    background: url(/images/wave-white.png) top left repeat-x;
-    background-size: 7px 2px;
-    background-color: red;
-   }
-
-  section#profile {
-    .content {
-      h1 {
-        clear: left;
-      }
-    }
-    .column {
-      display: inline-block;
-      img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      h3 {
-        text-align: center;
-      }
-      width: 30%;
-      margin-right: 2%;
-    }
   }
 
   .contact {
