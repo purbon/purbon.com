@@ -165,3 +165,20 @@ ul.no-bullet {
     }
   }
 }
+
+#cv {
+ h1 {
+   margin: 0.1em 0;
+ }
+}
+
+
+/* hCard */
+ul.vcard { display: inline-block; margin: 0 0 12px 0; border: 1px solid #ddd; padding: 10px; }
+ul.vcard li { margin: 0; display: block; }
+ul.vcard li.fn { font-weight: bold; font-size: 15px; font-size: 1.5rem; }
+
+p.vevent span.summary { font-weight: bold; }
+p.vevent abbr { cursor: default; text-decoration: none; font-weight: bold; border: none; padding: 0 1px; }
+
+
