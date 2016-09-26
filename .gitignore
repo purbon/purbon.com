@@ -18,4 +18,4 @@ public/assets
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-
+*.lock
