@@ -16,7 +16,7 @@
   <body>
     <div id="header">
       <h1><%= link_to 'Pere Urbon-Bayes', root_path %></h1>        
-      
+
       <ul class="menu">
         <li class=""><a href="?locale=en#"><%= image_tag 'England.png'%></a></li>
         <!--<li class=""><a href="?locale=de#"><%= image_tag 'Germany.png'%></a></li>-->
@@ -27,41 +27,52 @@
 
       <div class="container">
         <div class="row">
-        <div class="one-third column right-bar">
-          <p><%= t('whoim_text').html_safe  %></p>
+          <div class="five columns right-bar">
+              <div class="row">
+                <div class="one-third column">
+                  <%= image_tag('purbon_head_small.jpg', size: "105x158") %>
+                </div>
+                <div class="eight columns whoim">
+                  <%= t('whoim_text').html_safe  %>
+                </div>
+              </div>
+              <h4> Key Skills </h4>
+              <%= t('key_skills').html_safe  %>
 
-          <ul class="no-bullet">
-            <li class=""><a href="http://words.purbon.com">Writings</a></li>
-            <li class=""><%= link_to t('cv'), cv_path %></li>
-            <li class=""><%= link_to t('slides'), slides_path %></li>
-          </ul>
+              <h4> Links </h4>
 
-          <h3> Elsewhere </h3>
+              <ul class="no-bullet">
+                <li class=""><a href="http://words.purbon.com">Writings</a></li>
+                <li class=""><%= link_to t('cv'), cv_path %></li>
+                <li class=""><%= link_to t('slides'), slides_path %></li>
+              </ul>
 
-          <ul class="no-bullet social">
-            <li>
-               <%= image_tag("github.png", size: "16x16") %>  <a href="https://github.com/purbon" original-title="Github"> Github</a>
-            </li>
-            <li>
-               <%= image_tag("twitter.png", size: "16x16") %>  <a href="https://twitter.com/purbon" original-title="Twitter"> Twitter</a>
-            </li>
-            <li>
-               <%= image_tag("linkedin.png", size: "16x16") %>  <a href="http://www.linkedin.com/in/purbon" original-title="Linkedin"> Linkedin</a>
-            </li>
-            <li>
-               <%= image_tag("xing.jpg", size: "16x16") %>  <a href="http://www.xing.com/profile/Pere_UrbonBayes2" original-title="Xing"> Xing</a>
-            </li>
-          </ul>
+              <h4> Elsewhere</h4>
+
+              <ul class="no-bullet social">
+                <li>
+                  <%= image_tag("github.png", size: "16x16") %>  <a href="https://github.com/purbon" original-title="Github"> Github</a>
+                </li>
+                <li>
+                  <%= image_tag("twitter.png", size: "16x16") %>  <a href="https://twitter.com/purbon" original-title="Twitter"> Twitter</a>
+                </li>
+                <li>
+                  <%= image_tag("linkedin.png", size: "17x16") %>  <a href="http://www.linkedin.com/in/purbon" original-title="Linkedin"> Linkedin</a>
+                </li>
+                <li>
+                  <%= image_tag("xing.jpg", size: "16x16") %>  <a href="http://www.xing.com/profile/Pere_UrbonBayes2" original-title="Xing"> Xing</a>
+                </li>
+              </ul>
 
 
-          <%= link_to t('contactme'), contactme_path, :class => "button [secondary alert success]" %>
-        </div>
-         <div class="two-thirds column">
-            <%= yield %>
-         </div> 
+              <%= link_to t('contactme'), contactme_path, :class => "button [secondary alert success]" %>
+            </div>
+            <div class="seven columns">
+              <%= yield %>
+            </div> 
+          </div>
         </div>
       </div>
-    </div>
   </body>
   <script type="text/javascript">
 

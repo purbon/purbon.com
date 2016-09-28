@@ -71,6 +71,14 @@ ul.no-bullet {
     padding-right: 1em;
   }
 
+  .head img {
+    box-shadow: 8px 8px 10px #aaa;
+  }
+
+  .whoim {
+    text-align: justify;
+  }
+
   .contact {
     text-align: center !important;
     text-decoration: underline;
@@ -123,6 +131,7 @@ p.vevent abbr { cursor: default; text-decoration: none; font-weight: bold; borde
 
   h3 {
     margin-bottom: 0.1em;
+
   }
   .item {
     width: 70%;
