@@ -96,15 +96,5 @@
     </p>
   </div>
 </div>
-<div class="row">
-  <div class="twelve columns">
-    <ul class="vcard">
-      <li class="fn">Pere Urbon-Bayes</li>
-      <li class="locality">Berlin</li>
-      <li><span class="state">Germany</span>, <span class="zip">12045</span></li>
-      <li class="email"><%= link_to t('contactme'), contactme_path %></li>
-    </ul>
-  </div>
-</div>
-
+<%= render "shared/vcard" %>
 </div>
