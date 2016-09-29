@@ -15,13 +15,27 @@
   </head>
   <body>
     <div id="header">
-      <h1><%= link_to 'Pere Urbon-Bayes', root_path %></h1>        
-
-      <ul class="menu">
-        <li class=""><a href="?locale=en#"><%= image_tag 'England.png'%></a></li>
-        <!--<li class=""><a href="?locale=de#"><%= image_tag 'Germany.png'%></a></li>-->
-        <li class=""><a href="?locale=ca#"><%= image_tag 'Catalan.png'%></a></li>
-      </ul>
+      <h1 id="top"><%= link_to 'Pere Urbon-Bayes', root_path %></h1>        
+      <div class="menu">
+      <table style="width:100%; border:0">
+        <tr>
+          <td>
+            <ul>
+              <li class=""><a href="http://words.purbon.com">Writings</a></li>
+              <li class=""><%= link_to t('cv'), cv_path %></li>
+              <li class=""><%= link_to t('slides'), slides_path %></li>
+              <li class=""><%= link_to 'Principal', root_path %></li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li class=""><a href="?locale=en#"><%= image_tag 'England.png'%></a></li>
+              <!--<li class=""><a href="?locale=de#"><%= image_tag 'Germany.png'%></a></li>-->
+              <li class=""><a href="?locale=ca#"><%= image_tag 'Catalan.png'%></a></li>
+            </ul>
+          </td>
+        </tr>
+      </table> </div>
     </div>
     <div id="body">
 
@@ -38,14 +52,6 @@
               </div>
               <h4> Key Skills </h4>
               <%= t('key_skills').html_safe  %>
-
-              <h4> Links </h4>
-
-              <ul class="no-bullet">
-                <li class=""><a href="http://words.purbon.com">Writings</a></li>
-                <li class=""><%= link_to t('cv'), cv_path %></li>
-                <li class=""><%= link_to t('slides'), slides_path %></li>
-              </ul>
 
               <h4> Elsewhere</h4>
 
