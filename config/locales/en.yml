@@ -32,7 +32,8 @@ en:
   <li>Ruby, Java, Scala, Javascript.</li>
   <li>Elasticsearch, Logstash, Kibana, Beats.</li>
   <li>Neo4j, DEX, MySQL.</li>
-  <li>Apache Hadoop.</li>
+  <li>Ansible</li>
+  <li>Hadoop, Spark, Hive.</li>
   </ul>
   "
   profile: "Profile"

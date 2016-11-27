@@ -156,3 +156,34 @@ p.vevent abbr { cursor: default; text-decoration: none; font-weight: bold; borde
     height: 70%;
   }
 }
+
+.menu {
+  td {
+    width: 50%;
+  }
+  td:first-child { 
+    float: left;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-right: 3em;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    //background-color: #111111;
+  }
+}

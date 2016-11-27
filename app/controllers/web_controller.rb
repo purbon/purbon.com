@@ -9,7 +9,7 @@ class WebController < ApplicationController
   def contactme
   end
 
-  def slides
+  def communications
   end
 
   def send_contact
