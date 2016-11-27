@@ -27,7 +27,7 @@ en:
   whoim_text: "<p>Software consultant and data enginner with a background in data processing infrastructure and information retrieval.</p>"
   key_skills: "
   <ul class='no-bullet'>
-  <li>Coaching teams about best practices for the data processing pipeline.</li>
+  <li>Coaching teams about best practices for their data processing pipeline.</li>
   <li>Software engineering best practices.</li>
   <li>Ruby, Java, Scala, Javascript.</li>
   <li>Elasticsearch, Logstash, Kibana, Beats.</li>
