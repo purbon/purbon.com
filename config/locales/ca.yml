@@ -24,16 +24,23 @@ ca:
   experiences: "Experiences"
   contactme: "Contacta'm"
   whoim: "Sobre mi"
-  whoim_text: "<p>Sóc en Pere Urbón, enginyer de programari de Barcelona però ara vivint a Berlín, Alemanya. 
-                  Amb més de 10 anys d'experiència en molts diferents entorns, desde projectes d'investigació fins a 
-                  empreses petites i mitjanes. Amb Ruby, Java, Javascript, bases de dades NoSQL (graphdb) i moltes altres
-                  tecnologies puc ajudar a la seva organització i als seus projectes.</p>
-<p> Participo regularment en grups d'usuaris locals, conferencies on també he compartit el meu coneixement com a conferenciant.</p>"
+  key_skills: "
+  <ul class='no-bullet'>
+  <li>Coaching teams about best practices for their data processing pipeline.</li>
+  <li>Software engineering best practices.</li>
+  <li>Ruby, Java, Scala, Javascript.</li>
+  <li>Elasticsearch, Logstash, Kibana, Beats.</li>
+  <li>Neo4j, DEX, MySQL.</li>
+  <li>Ansible</li>
+  <li>Hadoop, Spark, Hive.</li>
+  </ul>
+  "
+  whoim_text: "<p>Consultor de Software i Enginyer de dades amb un fort background en infraestructura de processament de dades i recuperació d'informació (IR).</p>"
   profile: "Perfil"
   profile_text: "<p>El meu hobby és la meva feina, i la meva feina és el meu hobby, que més puc demanar?. M’encanta fer software amb el que pugui ajudar a solucionar les necessitats de la gent, fent servir les eines adequades i les millors pràctiques.</p><p>Em trobareu gaudint amb el FLOSS, escrivint Ruby, Java i sobretot treballant amb dades.</p>"
-  software_carpitenry: "<h3>Artesà del Software</h3>"
-  nosql_engineering: "<h3>Enginyeria NoSQL</h3>"
-  consulting: "<h3>Consultoria</h3>"
+  software_carpitenry: "Enginyeria del Software"
+  data_engineering: "Enginyeria de dades"
+  consulting: "Consultoria"
   experiences_text: "<p>Tinc experiència en projectes per a petites startups, però també amb recerca a universitats de Barcelona. El que això vol dir és que m’encanta trobar-me amb problemes de tot tipus i que em mantinguin ocupat. Si tens curiositat pots consultar els meus perfils a Internet.</p><p>
 Amb coneixements de Java/Ruby/JavaScript/C, NoSQL(DEX/Neo4j/Redis/MongoDB), Relacional (MySQL, Postgree) i tecnologies BigData (Hadoop), m’agrada estar a la última i d’aquesta manera poder ajudar millor.</p>"
   links: "Enllaços"

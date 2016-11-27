@@ -20,18 +20,28 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  public: "Public Speaking"
   writings: "Writings"
   experiences: "Experiences"
   contactme: "Contact me!"
   whoim: "Who I'm"
-  whoim_text: "<p>I'm Pere Urbón, a seasoned software developer from Barcelona living in Berlin, Germany. With more than 10 years 
-  of experience shiping sofware in many different environments, from top research projects to startup's.Using Ruby, Java, Javascript, NoSQL databases (graphdb's) and many other technologies I can help your organization and 
-  project to archive your goal.</p><p>I also enjoy meetups, conferences and being an speaker.</p>"
+  whoim_text: "<p>Software consultant and data enginner with a background in data processing infrastructure and information retrieval.</p>"
+  key_skills: "
+  <ul class='no-bullet'>
+  <li>Coaching teams about best practices for their data processing pipeline.</li>
+  <li>Software engineering best practices.</li>
+  <li>Ruby, Java, Scala, Javascript.</li>
+  <li>Elasticsearch, Logstash, Kibana, Beats.</li>
+  <li>Neo4j, DEX, MySQL.</li>
+  <li>Ansible</li>
+  <li>Hadoop, Spark, Hive.</li>
+  </ul>
+  "
   profile: "Profile"
   profile_text: "<p>My hobby is my work, and my work is my hobby, what else could I ask for?. I love to write software that could help people solve his problems, using proper tools and following the best practices I can.</p><p>You can find me enjoying to work with FLOSS, doing Ruby, even Java and working with data.</p>"
-  software_carpitenry: "<h3>Software Carpentry</h3>"
-  nosql_engineering: "<h3>NoSQL Engineering</h3>"
-  consulting: "<h3>Consulting</h3>"
+  software_carpitenry: "Software Carpentry"
+  data_engineering: "Data Engineering"
+  consulting: "Consulting and Education"
   experiences_text: "<p>I've experience in projects in little startups, but also doing research at top noch universities back in Barcelona. What
   this use to mean is that I enjoy hard problems that keep my mind busy. If you're interested on it, you could check my 
   online profiles.</p>

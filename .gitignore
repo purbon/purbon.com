@@ -5,6 +5,7 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 config/env.yml
+config/secrets.yml
 public/assets
 
 # Ignore bundler config.
@@ -17,3 +18,4 @@ public/assets
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+*.lock
